@@ -195,7 +195,7 @@ export const experiences = [
       description:
         "This Breast Cancer Detection application uses a machine learning model to predict the presence of breast cancer based on various features of cell nuclei.",
       image:
-        "https://github.com/Sumbati10/PREDICTION_BREASTCANCER/blob/main/demo.gif",
+        "https://raw.githubusercontent.com/Sumbati10/PREDICTION_BREASTCANCER/main/demo.gif", // Raw URL for GIF
       tags: ["Machine Learning", "Python", "Flask", "Scikit-learn"],
       category: "machine learning",
       github: "https://github.com/Sumbati10/PREDICTION_BREASTCANCER",
@@ -208,7 +208,7 @@ export const experiences = [
       description:
         "The Diabetes Prediction System is a web-based application that predicts the likelihood of an individual having diabetes based on various health-related features. The system utilizes a machine learning model trained on historical data to provide predictions for users.",
       image:
-        "https://github.com/Sumbati10/Diabetes-Prediction-System/blob/main/demo.gif",
+        "https://raw.githubusercontent.com/Sumbati10/Diabetes-Prediction-System/main/demo.gif", // Raw URL for GIF
       tags: ["Machine Learning", "Python", "Flask", "Scikit-learn"],
       category: "machine learning",
       github: "https://github.com/Sumbati10/Diabetes-Prediction-System",
@@ -221,11 +221,11 @@ export const experiences = [
       description:
         "Developed a deep learning-based web application to classify various potato diseases using Convolutional Neural Networks (CNN). The system utilizes image classification techniques to predict potato diseases from images of leaves.",
       image:
-        "https://github.com/Sumbati10/Potato-Disease-Classification-Using-CNN/blob/main/images/Screenshot%202024-05-22%20222449.png",
+        "https://raw.githubusercontent.com/Sumbati10/Potato-Disease-Classification-Using-CNN/main/images/Screenshot%202024-05-22%20222449.png", // Raw URL for image
       tags: ["Deep Learning", "Python", "TensorFlow", "CNN", "Image Classification"],
       category: "machine learning",
       github: "https://github.com/Sumbati10/Potato-Disease-Classification-Using-CNN",
       webapp: "https://potato-disease-classification.netlify.app/",
     },
   ];
-      
+  
