@@ -87,10 +87,16 @@ const SkillTitle = styled.div`
 
 const SkillList = styled.div`
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px;
   margin-bottom: 20px;
+`;
+
+const SkillCategory = styled.div`
+  font-size: 20px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-bottom: 8px;
 `;
 
 const SkillItem = styled.div`
@@ -130,17 +136,17 @@ const Skills = () => {
         </Desc>
 
         <SkillsContainer>
-          {skills.map((skill, index) => (
-            <Tilt key={`skill-${index}`}>
+          {skills.map((skillCategory, index) => (
+            <Tilt key={`skill-category-${index}`}>
               <Skill>
-                <SkillTitle>{skill.title}</SkillTitle>
+                <SkillTitle>{skillCategory.title}</SkillTitle>
                 <SkillList>
-                  {skill.skills.map((item, index_x) => {
+                  {skillCategory.skills.map((item, index_x) => {
                     if (item.category) {
-                      // Handle categories within Technical Skills
+                      // Render skill categories
                       return (
                         <div key={`category-${index_x}`}>
-                          <SkillItem>{item.category}</SkillItem>
+                          <SkillCategory>{item.category}</SkillCategory>
                           <SkillList>
                             {item.skills.map((subItem, index_sub) => (
                               <SkillItem key={`subItem-${index_sub}`}>
