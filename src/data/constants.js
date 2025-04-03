@@ -166,22 +166,19 @@ export const experiences = [
   
   export const education = [
     {
-      id: 0,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
+      id: 0,    
       school: "World Quant University",
       date: "Ongoing",
       degree: "Masters in Financial Engineering",
     },
     {
-      id: 1,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+      id: 1,      
       school: "Kenyatta University",
       date: "2016 - 2020",
       grade: "Bachelor of Science (Statistics and Programming)",
     },
     {
-      id: 2,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+      id: 2,      
       school: "World Quant University",
       date: "2023",
       degree: "Applied Data Science",
