@@ -4,13 +4,14 @@ import { skills } from "../../data/constants";
 import { Tilt } from "react-tilt";
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-justify-content-center;
-position: relative;
-z-index: 1;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
 `;
+
 const Wrapper = styled.div`
   position: relative;
   display: flex;
@@ -55,6 +56,7 @@ const SkillsContainer = styled.div`
   gap: 50px;
   justify-content: center;
 `;
+
 const Skill = styled.div`
   width: 100%;
   max-width: 500px;
@@ -90,6 +92,7 @@ const SkillList = styled.div`
   gap: 12px;
   margin-bottom: 20px;
 `;
+
 const SkillItem = styled.div`
   font-size: 16px;
   font-weight: 400;
@@ -122,27 +125,39 @@ const Skills = () => {
     <Container id="Skills">
       <Wrapper>
         <Title>Skills</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
-          Here are some of my skills on which I have been working on for the
-          past 3 years.
+        <Desc style={{ marginBottom: "40px" }}>
+          Here are some of my skills on which I have been working on for the past 3 years.
         </Desc>
 
         <SkillsContainer>
           {skills.map((skill, index) => (
-            <Tilt>
-              <Skill key={`skill-${index}`}>
+            <Tilt key={`skill-${index}`}>
+              <Skill>
                 <SkillTitle>{skill.title}</SkillTitle>
                 <SkillList>
-                  {skill.skills.map((item, index_x) => (
-                    <SkillItem key={`skill-x-${index_x}`}>
-                      <SkillImage src={item.image} />
-                      {item.name}
-                    </SkillItem>
-                  ))}
+                  {skill.skills.map((item, index_x) => {
+                    if (item.category) {
+                      // Handle categories within Technical Skills
+                      return (
+                        <div key={`category-${index_x}`}>
+                          <SkillItem>{item.category}</SkillItem>
+                          <SkillList>
+                            {item.skills.map((subItem, index_sub) => (
+                              <SkillItem key={`subItem-${index_sub}`}>
+                                {subItem}
+                              </SkillItem>
+                            ))}
+                          </SkillList>
+                        </div>
+                      );
+                    }
+                    return (
+                      <SkillItem key={`skill-x-${index_x}`}>
+                        {item.image && <SkillImage src={item.image} />}
+                        {item.name}
+                      </SkillItem>
+                    );
+                  })}
                 </SkillList>
               </Skill>
             </Tilt>
