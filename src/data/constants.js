@@ -6,7 +6,7 @@ export const Bio = {
     "ML Engineer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "Detail-oriented and highly skilled Data Scientist with 3 years’ experience in extracting actionable insights from complex data. Possesses a strong analytical mindset and the ability to think critically,breaking down complex problems into manageable components.I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/Sumbati10",
   resume: "https://drive.google.com/file/d/1VgcV8Z0E3bQX4O_gkZqZ03iWZ0DqNGrO/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/lindahsumbati/"
