@@ -2,7 +2,7 @@
 
 Welcome to my online portfolio! This project showcases my skills, projects, and experiences as a web developer. It provides an overview of my background, displays my projects, and offers a way to contact me.
 
-**Weblink:** [Live Website](https://Sumbati10.github.io)
+**Weblink:** [Live Website](https://lindah.vercel.app/)
 
 ---
 
@@ -55,22 +55,30 @@ To run this portfolio locally, follow these steps:
 
    ```bash
    git clone https://github.com/Sumbati10/-Sumbati10.github.io.git
+   ```
+
 2.Navigate to the project directory:
  ```bash
   cd Sumbati10.github.io
+```
 
 3. Install the dependencies:
  ```bash
 npm install
+```
+
 4. Start the development server:
  ```bash
 npm start
+```
+
 5. Open your browser and visit:
  ```bash
 http://localhost:3000
+```
 
 
-**## Usage**
+## Usage
 After installation, you can navigate through the different sections of the portfolio using the navigation menu. Here's what each section includes:
 
 About Me: An overview of my background and skills.
