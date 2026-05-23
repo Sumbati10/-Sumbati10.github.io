@@ -102,7 +102,7 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc style={{ marginBottom: "40px" }}>
-          I have worked on a wide range of projects.  Here are some of my projects.
+          I have worked on various data engineering and machine learning projects.
         </Desc>
         <ToggleButtonGroup>
           {/* Only "ALL" and "Machine Learning" toggles visible */}

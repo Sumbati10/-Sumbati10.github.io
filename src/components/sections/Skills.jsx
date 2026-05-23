@@ -132,7 +132,7 @@ const Skills = () => {
       <Wrapper>
         <Title>Skills</Title>
         <Desc style={{ marginBottom: "40px" }}>
-          Here are some of my skills on which I have been working on for the past 3 years.
+          Here are my technical skills in data engineering, data science, and analytics.
         </Desc>
 
         <SkillsContainer>
