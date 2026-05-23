@@ -78,14 +78,6 @@ const SkillList = styled.div`
   gap: 12px;
 `;
 
-const SkillCategory = styled.div`
-  font-size: 16px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 8px;
-  margin-top: 12px;
-`;
-
 const SkillItem = styled.div`
   font-size: 14px;
   font-weight: 400;
@@ -96,11 +88,6 @@ const SkillItem = styled.div`
   display: inline-block;
   margin-right: 8px;
   margin-bottom: 8px;
-`;
-
-const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
 `;
 
 const Skills = () => {
