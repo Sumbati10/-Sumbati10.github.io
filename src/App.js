@@ -13,6 +13,7 @@ import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import ProjectDetails from "./components/Dialog/ProjectDetails";
 import { useState } from "react";
+import { Bio } from "./data/constants";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -47,44 +48,15 @@ function App() {
           <StarCanvas />
           <AnimatePresence>
             <div>
-              <Hero name="Lindah Sumbati" profession="Data Scientist" />
+              <Hero name={Bio.name} profession={Bio.roles[0]} />
               <Wrapper>
                 <Skills />
-                <Experience
-                  jobs={[
-                    {
-                      title: "Data Scientist",
-                      company: "Hello Tractor",
-                      duration: "Jan 2024 - Present",
-                      responsibilities: [
-                        "Built and optimized classifiers using machine learning techniques.",
-                        "Enhanced data collection procedures for analytics.",
-                        "Implemented NLP techniques to analyze user-generated text.",
-                        "Designed cloud-based data pipelines for real-time analytics.",
-                      ],
-                    },
-                    {
-                      title: "Data Analyst",
-                      company: "Kenya Agricultural and Livestock Research Organization",
-                      duration: "2018 - 2020",
-                      responsibilities: [
-                        "Developed and optimized data collection systems.",
-                        "Built Power BI dashboards for data visualization.",
-                        "Contributed to research project design and methodology.",
-                      ],
-                    },
-                  ]}
-                />
+                <Experience />
               </Wrapper>
               <Projects openModal={openModal} setOpenModal={setOpenModal} />
               <Wrapper>
-                <Education
-                  schools={[
-                    { degree: "MSc Financial Engineering", school: "WorldQuant University", year: "Ongoing" },
-                    { degree: "BSc Statistics & Programming", school: "Kenyatta University", year: "2016-2020" },
-                  ]}
-                />
-                <Contact email="sumbatilinda@gmail.com" linkedin="https://www.linkedin.com/in/lindahsumbati/" github="https://github.com/Sumbati10" />
+                <Education />
+                <Contact email="sumbatilinda@gmail.com" linkedin={Bio.linkedin} github={Bio.github} />
               </Wrapper>
               <Footer />
 
