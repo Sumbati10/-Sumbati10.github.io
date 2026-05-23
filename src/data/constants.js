@@ -14,109 +14,56 @@ export const Bio = {
 
 export const skills = [
   {
-    title: "Data Engineering",
+    category: "Programming",
+    skills: ["Python (NumPy, Pandas, scikit-learn)", "R", "SQL", "STATA"],
+  },
+  {
+    category: "Data Engineering",
     skills: [
-      {
-        name: "Airflow",
-        image:
-          "https://airflow.apache.org/images/stable/logo.png",
-      },
-      {
-        name: "dbt",
-        image:
-          "https://www.getdbt.com/img/avatars/dbt-icon.png",
-      },
-      {
-        name: "PostgreSQL",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
-      },
-      {
-        name: "AWS",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-      },
-      {
-        name: "Docker",
-        image:
-          "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
-      },
-      {
-        name: "Terraform",
-        image:
-          "https://www.hashicorp.com/_next/image?url=https%3A%2F%2Fcontent.hashicorp.com%2Fapi%2Fassets%2Fprod%2Fterraform%2520logo%2F6e5a8e82-3cbe-4932-8c5e-7a2f6f5694e8.png&w=384&q=75",
-      },
+      "Airflow",
+      "dbt",
+      "Terraform",
+      "Flyway",
+      "pgTAP",
+      "ETL/ELT pipelines",
+      "Data modeling",
+      "Data quality",
+      "Metadata management",
+      "API integration",
+      "Workflow automation",
     ],
   },
   {
-    title: "Technical Skills",
+    category: "Databases / Warehousing",
+    skills: ["PostgreSQL", "MySQL", "Amazon Redshift"],
+  },
+  {
+    category: "Cloud / DevOps",
+    skills: ["AWS (Lambda, S3, RDS, EC2)", "Docker", "Git/GitHub"],
+  },
+  {
+    category: "Analytics / Visualization",
     skills: [
-      {
-        category: "Programming",
-        skills: [
-          "Python (NumPy, Pandas, scikit-learn)",
-          "R",
-          "SQL",
-          "STATA",
-        ],
-      },
-      {
-        category: "Data Engineering",
-        skills: [
-          "Airflow",
-          "dbt",
-          "Terraform",
-          "Flyway",
-          "pgTAP",
-          "ETL/ELT pipelines",
-          "Data modeling",
-          "Data quality",
-          "Metadata management",
-          "API integration",
-          "Workflow automation",
-        ],
-      },
-      {
-        category: "Databases / Warehousing",
-        skills: [
-          "PostgreSQL",
-          "MySQL",
-          "Amazon Redshift",
-        ],
-      },
-      {
-        category: "Cloud / DevOps",
-        skills: [
-          "AWS (Lambda, S3, RDS, EC2)",
-          "Docker",
-          "Git/GitHub",
-        ],
-      },
-      {
-        category: "Analytics / Visualization",
-        skills: [
-          "Power BI",
-          "Matplotlib",
-          "Seaborn",
-          "LookML (Looker)",
-          "Excel",
-          "Google Sheets",
-          "Google Analytics",
-          "Jupyter Notebook",
-        ],
-      },
-      {
-        category: "Statistics / ML",
-        skills: [
-          "Hypothesis testing",
-          "Regression",
-          "Time series",
-          "A/B testing",
-          "Predictive modeling",
-          "NLP",
-          "Machine learning",
-        ],
-      },
+      "Power BI",
+      "Matplotlib",
+      "Seaborn",
+      "LookML (Looker)",
+      "Excel",
+      "Google Sheets",
+      "Google Analytics",
+      "Jupyter Notebook",
+    ],
+  },
+  {
+    category: "Statistics / ML",
+    skills: [
+      "Hypothesis testing",
+      "Regression",
+      "Time series",
+      "A/B testing",
+      "Predictive modeling",
+      "NLP",
+      "Machine learning",
     ],
   },
 ];

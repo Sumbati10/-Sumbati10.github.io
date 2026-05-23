@@ -115,30 +115,13 @@ const Skills = () => {
         <SkillsContainer>
           {skills.map((skillCategory, index) => (
             <Skill key={`skill-category-${index}`}>
-              <SkillTitle>{skillCategory.title}</SkillTitle>
+              <SkillTitle>{skillCategory.category}</SkillTitle>
               <SkillList>
-                {skillCategory.skills.map((item, index_x) => {
-                  if (item.category) {
-                    return (
-                      <div key={`category-${index_x}`}>
-                        <SkillCategory>{item.category}</SkillCategory>
-                        <SkillList>
-                          {item.skills.map((subItem, index_sub) => (
-                            <SkillItem key={`subItem-${index_sub}`}>
-                              {subItem}
-                            </SkillItem>
-                          ))}
-                        </SkillList>
-                      </div>
-                    );
-                  }
-                  return (
-                    <SkillItem key={`skill-x-${index_x}`}>
-                      {item.image && <SkillImage src={item.image} />}
-                      {item.name}
-                    </SkillItem>
-                  );
-                })}
+                {skillCategory.skills.map((skill, skillIndex) => (
+                  <SkillItem key={`skill-${skillIndex}`}>
+                    {skill}
+                  </SkillItem>
+                ))}
               </SkillList>
             </Skill>
           ))}
