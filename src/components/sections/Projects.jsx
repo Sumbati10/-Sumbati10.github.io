@@ -4,7 +4,7 @@ import { projects } from "../../data/constants";
 import ProjectCard from "../cards/ProjectCard";
 
 const Container = styled.div`
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
