@@ -1,6 +1,5 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
-import emailjs from "@emailjs/browser";
 
 const Container = styled.div`
   display: flex;
@@ -50,7 +49,7 @@ const Desc = styled.div`
     font-size: 16px;
   }
 `;
-const ContactForm = styled.form`
+const ContactForm = styled.div`
   width: 95%;
   max-width: 600px;
   display: flex;
@@ -94,7 +93,7 @@ const ContactInputMessage = styled.textarea`
     border: 1px solid ${({ theme }) => theme.primary};
   }
 `;
-const ContactButton = styled.input`
+const ContactButton = styled.a`
   width: 100%;
   text-decoration: none;
   text-align: center;
@@ -108,6 +107,7 @@ const ContactButton = styled.input`
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: inline-block;
 
   &:hover {
     opacity: 0.9;
@@ -116,28 +116,6 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
-  const form = useRef();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
-        form.current,
-        "SybVGsYS52j2TfLbi"
-      )
-      .then(
-        (result) => {
-          alert("Message Sent");
-          form.current.resut();
-        },
-        (error) => {
-          alert(error);
-        }
-      );
-  };
-
   return (
     <Container>
       <Wrapper>
@@ -145,13 +123,11 @@ const Contact = () => {
         <Desc>
           Feel free to reach out for collaborations, opportunities, or any questions about my work.
         </Desc>
-        <ContactForm onSubmit={handleSubmit}>
+        <ContactForm>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton href="mailto:sumbatilinda@gmail.com">
+            sumbatilinda@gmail.com
+          </ContactButton>
         </ContactForm>
       </Wrapper>
     </Container>
